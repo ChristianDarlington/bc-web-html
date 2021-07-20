@@ -1,36 +1,86 @@
 *,
 *::after,
 *::before {
-margin: 0;
-padding: 0;
-box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 :root {
-  --purple:#272262;
+  --purple: #272262;
   --pink: #ff216e;
   --white: #e8e8e8;
   --yellow: #ffdb02;
   --orange: #ff5401;
 }
 
-body{
-  font-family: 'Montserrat', sans-serif;;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
-
 
 header {
-  background-color: #272262;
+  background-color: var(--purple);
+  height: 50px;
+  color: var(--white);
+  position: sticky;
+  top: 50;
+  width: 100%;
+}
+  
+
+ul {
+  list-style-type: none ;
 }
 
-main{
-  background-color: #ff216e;
+li {
+  float: right;
+  padding: 10px;
+  padding-top: 1.5%;
+  padding-left: 3%;
 }
 
-footer{
+.menu-link{
+  font-size: 2rem;
+}
+
+.login-btn{
+  color: var(--orange);
+  float: left;
+}
+
+
+
+main {
+  background-color: var(--pink);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section {
+  height: 300px;
+  text-align: center;
+  /* border-style: solid; */
+  /* border-color: #e8e8e8; */
+  /* border-width: 5px; */
+}
+
+.hero-section{
+  color: aqua;
+  text-align: center;
+  background-color: var(--purple);
+  background-image: url(./bocacodeclass.jpeg);
+  background-size: cover;
+  background-position-y: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-blend-mode: soft-light;
+}
+
+.hero-section > h1 {
+  text-align: center;
+}
+
+
+footer {
   background-color: var(--orange);
-}
-
-section{
-  border: 5px var(--white) solid;
 }
